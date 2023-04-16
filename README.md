@@ -8,6 +8,7 @@ For this project, I utilized Oracle's VirtualBox to create an Active Directory e
 
 ## The Architecture of the Lab
 
+![AD ARCH](https://i.imgur.com/ynBUfaH.png)
 
 <br />
 
