@@ -34,10 +34,12 @@ Administrator Account: username
   11. Obtain Kerberous ticket with an account that has admin priviledges: <br> ```kinit username```
   12. Connect the system to the DC: <br> ```realm join -v -U username mydomain.com```
   14. Verify you have can see random users in your AD: <br> ```id user@mydomain.com``` <br> <br> ![access to AD](https://i.imgur.com/vrfmAnDl.png)
-  15. Now log off your primary account and pick a random user in AD. <br> ```user@mydomain.com``` <br> <br> ![Linux Logon](https://i.imgur.com/nXXDn3Dl.png)
+  15. Now log off your primary account and pick a random user in AD. <br> ```user@mydomain.com``` <br> <br> ![Linux Logon](https://i.imgur.com/TAy4kSNl.png)
   16. Once Ubuntu does the initial setup open the command line interface and verify: <br> ```who``` <br> <br> ![who](https://i.imgur.com/s2djFZ3l.png)
 
 
+
+## Final Setup
 
 
 
