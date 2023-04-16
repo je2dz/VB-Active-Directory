@@ -25,6 +25,10 @@ For this project, I utilized Oracle's VirtualBox to create an Active Directory e
 - Windows 10 Pro
 - Ubuntu 22.04.1
 
+<br />
+
+## 
+
 ## Connecting Windows 10 Pro to AD
 
 <br />
@@ -60,6 +64,10 @@ Administrator Account: username
 
 ## Final Setup
 
+<br />
 
+## Credits
+
+This project was based on YouTube content created by [Josh Madakor](https://www.youtube.com/watch?v=MHsI8hJmggI&t=8s).
 
 
