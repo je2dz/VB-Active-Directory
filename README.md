@@ -62,12 +62,14 @@ Administrator Account: username
   15. Now log off your primary account and pick a random user in AD. <br> ```user@mydomain.com``` <br> <br> ![Linux Logon](https://i.imgur.com/TAy4kSNl.png)
   16. Finally, once Ubuntu does the initial setup, open the command line interface and verify: <br> ```who``` <br> <br> ![who](https://i.imgur.com/s2djFZ3l.png)
 
-
-
-
 ## Conclusion
 
-In this project, I utilized VirtualBox to create three virtual machines. The first VM was Windows Server 2019 that served as the Domain Controller, DHCP, and Active Directory. Once the networking configurations were complete on the server I then created second VM using Windows 10 Pro. Lastly, I added a personal objective to create a third VM using Ubuntu and connect it to active directory also. 
+In this project, I utilized VirtualBox to create three virtual machines. The first VM was Windows Server 2019 that served as the Domain Controller, DHCP, and Active Directory popluated with 1000 users. Once the networking configurations were complete for the server, I then created two more VMs and connected them to an internal network using Active Directory. I found the intial setup for the two Windows machines fairly straightforward; however, I did encounter difficulties by adding the additional goal of connecting an Ubuntu VM to Active Directory.   
+
+![AD Computers](https://i.imgur.com/yGbJT3Il.png)
+![DHCP Reservations](https://i.imgur.com/BHs2LzLl.png)
+![AD Users](https://i.imgur.com/CG0Pu8vl.png)
+
 
 <br />
 
