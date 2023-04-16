@@ -19,20 +19,22 @@ I wanted to expand the lab to include systems other than Windows so I decided to
 Computer Name: LINUX <br>
 Domain Name: mydomain.com <br>
 Host Name: LINUX.mydomain.com
+Administrator Account: username
 
   1. Create your Ubuntu VM, update everything, and take a snapshot so you can easily go back if something goes wrong. Network settings will be the same as your  Windows VM.
   3. Open up the command line interface.
   4. Verify you can ping the DC and that the DC can ping back.
-  5. Set the host name for the machine: ```sudo hostnamectl set-hostname LINUX.mydomain.com```
-  6. Verify the host name: ```hostnamectl```
-  7. Install the following: ```sudo apt install sssd-ad sssd-tools realmd adcli```
-  8. Discover the DC: ```sudo realm -v discover mydomain.com```
-  9. Install the following: ```sudo apt-get install -y krb5.conf```
-  10. Edit the krb5.conf file: ```sudo nano /etc/krb5.conf``` Capilization matters, verify default_realm is your DC and add rdns = false.
+  5. Set the host name for the machine: <br> ```sudo hostnamectl set-hostname LINUX.mydomain.com```
+  6. Verify the host name: <br> ```hostnamectl```
+  7. Install the following: <br> ```sudo apt install sssd-ad sssd-tools realmd adcli```
+  8. Discover the DC: <br> ```sudo realm -v discover mydomain.com```
+  9. Install the following: <br> ```sudo apt-get install -y krb5.conf```
+  10. Edit the krb5.conf file. (Capilization matters, verify default_realm is your DC and add rdns = false) <br> ```sudo nano /etc/krb5.conf``` <br> <br>
 ![.conf edit](https://i.imgur.com/uTKdqMW.png)
-  11. 
-  12. 
-  13. 
+  11. Obtain Kerberous ticket with an account that has admin priviledges: <br> ```kinit username```
+  12. Connect the system to the DC: <br> ```realm join -v -U username mydomain.com```
+  14. Verify you have can see random users in your AD: <br> ```id user@mydomain.com``` <br> <br> ![access to AD](https://i.imgur.com/vrfmAnD.png)
+  15. Now log off your primary account and pick a random user in AD. <br> ```user@mydomain.com``` <br> <br> ![Linux Logon](https://i.imgur.com/nXXDn3D.png)
 
 
 
