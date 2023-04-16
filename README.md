@@ -40,7 +40,7 @@ Domain Name: mydomain.com <br>
 Host Name: LINUX.mydomain.com <br>
 Administrator Account: username
 
-  1. Create your Ubuntu VM, update everything, and take a snapshot so you can easily go back if something goes wrong. Network settings will be the same as your  Windows VM.
+  1. Create your Ubuntu VM, update everything, and take a snapshot so you can easily go back if something goes wrong. Network settings will be the same as your  Windows 10 Pro VM.
   3. Open up the command line interface.
   5. Verify you can ping the DC and that the DC can ping back.
   6. Set the host name for the machine: <br> ```sudo hostnamectl set-hostname LINUX.mydomain.com```
@@ -54,7 +54,7 @@ Administrator Account: username
   12. Connect the system to the DC: <br> ```realm join -v -U username mydomain.com```
   14. Verify you have can see random users in your AD: <br> ```id user@mydomain.com``` <br> <br> ![access to AD](https://i.imgur.com/vrfmAnDl.png)
   15. Now log off your primary account and pick a random user in AD. <br> ```user@mydomain.com``` <br> <br> ![Linux Logon](https://i.imgur.com/TAy4kSNl.png)
-  16. Once Ubuntu does the initial setup open the command line interface and verify: <br> ```who``` <br> <br> ![who](https://i.imgur.com/s2djFZ3l.png)
+  16. Once Ubuntu does the initial setup, open the command line interface and verify: <br> ```who``` <br> <br> ![who](https://i.imgur.com/s2djFZ3l.png)
 
 
 
