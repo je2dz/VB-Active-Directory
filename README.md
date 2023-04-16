@@ -64,17 +64,16 @@ Administrator Account: username
 
 ## Conclusion
 
-In this project, I utilized VirtualBox to create three virtual machines. The first VM was Windows Server 2019 that served as the Domain Controller, DHCP, and Active Directory popluated with 1000 users. Once the networking configurations were complete for the server, I then created two more VMs and connected them to an internal network using Active Directory. I found the intial setup for the two Windows machines fairly straightforward; however, I did encounter difficulties by adding the additional goal of connecting an Ubuntu VM to Active Directory.   
+In this project, I utilized VirtualBox to create three virtual machines. The first VM was Windows Server 2019 that served as the Domain Controller, DHCP, and Active Directory popluated with 1000 users. Once the networking configurations were complete for the server, I then created two more VMs and integrated them to an internal network using Active Directory. I found the intial setup for the two Windows machines fairly straightforward; however, I did encounter difficulties by adding the additional goal of connecting an Ubuntu VM to Active Directory. After researching and testing I was able to find a solution that successfully fixed the problem and have created a project showing how Active Directory can provide a centralized management of user accounts, computers, and other network resources.  
 
 ![AD Computers](https://i.imgur.com/yGbJT3Il.png)
 ![DHCP Reservations](https://i.imgur.com/BHs2LzLl.png)
 ![AD Users](https://i.imgur.com/CG0Pu8vl.png)
 
-
 <br />
 
 ## Credits
 
-This project was based on YouTube content created by [Josh Madakor](https://www.youtube.com/watch?v=MHsI8hJmggI&t=8s).
+This project was based off YouTube content created by [Josh Madakor](https://www.youtube.com/watch?v=MHsI8hJmggI&t=8s).
 
 
