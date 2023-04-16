@@ -28,9 +28,11 @@ Host Name: LINUX.mydomain.com
   7. Install the following: ```sudo apt install sssd-ad sssd-tools realmd adcli```
   8. Discover the DC: ```sudo realm -v discover mydomain.com```
   9. Install the following: ```sudo apt-get install -y krb5.conf```
-  10. Edit the krb5.conf file: ```sudo nano /etc/krb5.conf```
-  
-
+  10. Edit the krb5.conf file: ```sudo nano /etc/krb5.conf``` Capilization matters, verify default_realm is your DC and add rdns = false.
+![.conf edit](https://i.imgur.com/uTKdqMW.png)
+  11. 
+  12. 
+  13. 
 
 
 
