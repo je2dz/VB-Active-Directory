@@ -27,7 +27,9 @@ For this project, I utilized Oracle's VirtualBox to create an Active Directory e
 
 <br />
 
-## 
+## Windows Server 2019 Setup
+
+<br />
 
 ## Connecting Windows 10 Pro to AD
 
@@ -58,11 +60,14 @@ Administrator Account: username
   12. Connect the system to the DC: <br> ```realm join -v -U username mydomain.com```
   14. Verify you have can see random users in your AD: <br> ```id user@mydomain.com``` <br> <br> ![access to AD](https://i.imgur.com/vrfmAnDl.png)
   15. Now log off your primary account and pick a random user in AD. <br> ```user@mydomain.com``` <br> <br> ![Linux Logon](https://i.imgur.com/TAy4kSNl.png)
-  16. Once Ubuntu does the initial setup, open the command line interface and verify: <br> ```who``` <br> <br> ![who](https://i.imgur.com/s2djFZ3l.png)
+  16. Finally, once Ubuntu does the initial setup, open the command line interface and verify: <br> ```who``` <br> <br> ![who](https://i.imgur.com/s2djFZ3l.png)
 
 
 
-## Final Setup
+
+## Conclusion
+
+In this project, I utilized VirtualBox to create three virtual machines. The first VM was Windows Server 2019 that served as the Domain Controller, DHCP, and Active Directory. Once the networking configurations were complete on the server I then created second VM using Windows 10 Pro. Lastly, I added a personal objective to create a third VM using Ubuntu and connect it to active directory also. 
 
 <br />
 
