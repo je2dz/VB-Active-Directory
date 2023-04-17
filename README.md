@@ -2,13 +2,17 @@
 
 ## Introduction
 
-For this project, I utilized Oracle's VirtualBox to create an Active Directory environment consisting of four virtual machines.  
+For this project, I utilized VirtualBox to create an Active Directory (AD) environment consisting of three virtual machines (VM). The first VM consisted of Windows Server 2019 which acted as the Domain Controller (DC) and AD provider. A custom PowerShell script by Josh Madakor, was then executed to populate AD with approximately 1000 users. Two more VMs (Windows 10 Pro & Ubuntu) were created and integrated into AD to create a centralized management system for user accounts, computers, and other network resources. 
+
+
+
+
 
 <br />
 
 ## The Architecture of the Lab
 
-![AD ARCH](https://i.imgur.com/ynBUfaH.png)
+![AD ARCH](https://i.imgur.com/nIuGsud.png)
 
 <br />
 
@@ -20,6 +24,7 @@ For this project, I utilized Oracle's VirtualBox to create an Active Directory e
 - RAS
 - DNS
 - Networking
+- PowerShell
 - Oracle VirtualBox
 - Windows Server 2019
 - Windows 10 Pro
@@ -37,7 +42,7 @@ For this project, I utilized Oracle's VirtualBox to create an Active Directory e
 
 ## Connecting Ubuntu 22.04.1 to AD
 
-I wanted to expand the lab to include systems other than Windows so I decided to connect Ubuntu to AD. This was by far the most challenging portion of the lab. One is led to believe that while installing Ubuntu you can simply choose to use AD in the intial setup and all will be fine. I never got it to succeed and always ended up getting a failed message. After searching the web it appears to be common issue and it took several YouTube videos, official documentation, and various web sites to develope a fix that works for me. 
+I wanted to expand the lab to include systems other than Windows so I decided to connect Ubuntu to AD. This was by far the most challenging portion of the lab. One is led to believe that while installing Ubuntu you can simply choose to use AD in the setup and all will be fine. I never got it to succeed and always ended up getting a failed message. After searching the web it appears to be common issue and it took several YouTube videos, official documentation, and various web sites to develope a fix that works for me. 
 
 #### STEPS
 
@@ -64,7 +69,7 @@ Administrator Account: username
 
 ## Conclusion
 
-In this project, I utilized VirtualBox to create three virtual machines. The first VM was Windows Server 2019 that served as the Domain Controller, DHCP, and Active Directory popluated with 1000 users. Once the networking configurations were complete for the server, I then created two more VMs and integrated them to an internal network using Active Directory. I found the intial setup for the two Windows machines fairly straightforward; however, I did encounter difficulties by adding the additional goal of connecting an Ubuntu VM to Active Directory. After researching and testing I was able to find a solution that successfully fixed the problem and have created a project showing how Active Directory can provide a centralized management of user accounts, computers, and other network resources.  
+In this project, VirtualBox was used to create an integrated an AD environment. The first VM was Windows Server 2019 that served as the DC, DHCP, and Active Directory popluated with approximately 1000 users. Once the networking configurations were complete for the server, I then created two more VMs and connected  them to an internal network using Active Directory. I found the intial setup for the two Windows machines fairly straightforward; however, I did encounter difficulties by adding the additional goal of connecting an Ubuntu VM to Active Directory. After researching and testing I was able to find a solution that successfully fixed the problem and have created a project showing how AD can provide a centralized management of user accounts, computers, and other network resources.  
 
 ![AD Computers](https://i.imgur.com/yGbJT3Il.png)
 ![DHCP Reservations](https://i.imgur.com/BHs2LzLl.png)
