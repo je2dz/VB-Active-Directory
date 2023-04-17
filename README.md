@@ -30,7 +30,9 @@ For this project, I utilized VirtualBox to create an Active Directory (AD) envir
 
 ## Windows Server 2019 Setup
 
+Key points to remember:
 
+- INSERT STUFF
 
 <br />
 
