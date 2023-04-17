@@ -38,9 +38,10 @@ For this project, I utilized VirtualBox to create an Active Directory (AD) envir
 
 Key points to remember:
 
-- When creating the VM you only need one NIC and it needs to be attached to the internal network: ![int nw](https://i.imgur.com/ITXfdqSl.png)
-- During the install ensure you only create a local account.
-- 
+- When creating the VM you only need one NIC and it needs to be attached to the internal network. <br> ![int nw](https://i.imgur.com/ITXfdqSm.png)
+- During the install ensure you only create a local account. Don't create or login to a Microsoft account.
+- Change the system's name. Don't click the standard "Rename this PC" button. Instead scroll down and click "Rename this PC (advanced)". You can now change the name and join the domain. <br> ![Change name and join domain](https://i.imgur.com/96BzAlim.png)
+-
 
 
 
