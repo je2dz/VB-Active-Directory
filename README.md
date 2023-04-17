@@ -33,6 +33,9 @@ For this project, I utilized VirtualBox to create an Active Directory (AD) envir
 Key points to remember:
 
 - When creating the VM you need two NICs. <br> ![int nw](https://i.imgur.com/ITXfdqSl.png) <br> ![Internet nw](https://i.imgur.com/1pGAsAil.png)
+- During the setup sequence, be sure to choose the "Desktop Experience" so you have GUI: <br> ![server os](https://i.imgur.com/XyC9XDKl.png) 
+- When you get to the logon screen it asks you to hit Ctrl+Alt+Del which ends up only affecting your host. For VirtualBox there are two options. You can click Input > Keyboard > Insert Ctrl+Alt+Del. Or there is an option to use Host+Del which is the default setting of RCtrl+Del.
+-
 
 <br />
 
@@ -44,6 +47,7 @@ Key points to remember:
 - During the install ensure you only create a local account. Don't create or login to a Microsoft account.
 - Change the system's name. Don't click the standard "Rename this PC" button. Instead scroll down and click "Rename this PC (advanced)". You can now change the name and join the domain. <br> ![Change name and join domain](https://i.imgur.com/96BzAlim.png)
 - After you join the domain you can choose one of the random users you created earlier to logon. <br> ![Change name and join domain](https://i.imgur.com/ToE60Pgm.png)
+- Configuring the adapters:
 
 
 
