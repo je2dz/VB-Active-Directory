@@ -1,4 +1,4 @@
-# Active Directory Environment in VirtualBox
+# Integrated Active Directory Environment in VirtualBox
 
 ## Introduction
 
@@ -30,9 +30,21 @@ For this project, I utilized VirtualBox to create an Active Directory (AD) envir
 
 ## Windows Server 2019 Setup
 
+
+
 <br />
 
 ## Connecting Windows 10 Pro to AD
+
+Key points to remember:
+
+- When creating the VM you only need one NIC and it needs to be attached to the internal network: ![int nw](https://i.imgur.com/ITXfdqSl.png)
+- During the install ensure you only create a local account.
+- 
+
+
+
+
 
 <br />
 
