@@ -2,7 +2,7 @@
 
 ## Introduction
 
-For this project, I utilized Oracle VirtualBox to create an integrated environment that consisited of a Windows Server 2019 serving as the Domain Controller (DC) with Active Directory (AD) service. A custom PowerShell script by Josh Madakor, was then executed to populate AD with approximately 1000 fictional users. I then created a Windows 10 Pro Virtual Machine (VM) and an Ubuntu 22.04.1 VM and integrated into AD to create a centralized management system for user accounts, computers, and other network resources. 
+For this project, Oracle VirtualBox was utilized to create an integrated environment that consisited of a Windows Server 2019 serving as the Domain Controller (DC) with Active Directory (AD) service. A custom PowerShell script was then executed to populate AD with approximately 1000 fictional users. I then created a Windows 10 Pro Virtual Machine (VM) and an Ubuntu 22.04.1 VM and integrated into them into AD to create a centralized management system for user accounts, computers, and other network resources. 
 
 <br />
 
