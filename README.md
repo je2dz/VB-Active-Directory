@@ -8,7 +8,7 @@ For this project, I utilized VirtualBox to create an Active Directory (AD) envir
 
 ## The Architecture of the Lab
 
-![AD ARCH](https://i.imgur.com/nIuGsud.png)
+![AD ARCH](https://i.imgur.com/JW4alB6.png)
 
 <br />
 
