@@ -17,7 +17,6 @@ For this project, Oracle VirtualBox was utilized to create an integrated environ
 - Active Directory
 - AD Domain Service
 - NAT
-- RAS
 - DNS
 - Networking
 - PowerShell
@@ -32,10 +31,9 @@ For this project, Oracle VirtualBox was utilized to create an integrated environ
 
 Key points to remember:
 
-- When creating the VM you need two NICs. <br> ![int nw](https://i.imgur.com/ITXfdqSl.png) <br> ![Internet nw](https://i.imgur.com/1pGAsAil.png)
-- During the setup sequence, be sure to choose the "Desktop Experience" so you have GUI: <br> ![server os](https://i.imgur.com/XyC9XDKl.png) 
-- When you get to the logon screen it asks you to hit Ctrl+Alt+Del which ends up only affecting your host. For VirtualBox there are two options. You can click Input > Keyboard > Insert Ctrl+Alt+Del. Or there is an option to use Host+Del which is the default setting of RCtrl+Del.
--
+- Two network adapters were used to separate traffic between external and internal. <br> ![adapters](https://i.imgur.com/WQydx1Ml.png) <br>
+- The following roles and services were configured. <br> ![roles](https://i.imgur.com/hDJ4vyfl.png)
+- PowerShell script used to generate approximately 1000 fictional users. <br> ![ps scrip](https://i.imgur.com/dhNIRcql.png) <br> ![AD Users](https://i.imgur.com/CG0Pu8vl.png)
 
 <br />
 
@@ -88,7 +86,6 @@ In this project, VirtualBox was used to create an integrated AD environment. The
 
 ![AD Computers](https://i.imgur.com/yGbJT3Il.png)
 ![DHCP Reservations](https://i.imgur.com/BHs2LzLl.png)
-![AD Users](https://i.imgur.com/CG0Pu8vl.png)
 
 <br />
 
