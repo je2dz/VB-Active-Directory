@@ -6,7 +6,7 @@ For this project, Oracle VirtualBox was utilized to create an integrated environ
 
 <br />
 
-## The Architecture of the Lab
+## Project Architecture
 
 ![AD ARCH](https://i.imgur.com/JW4alB6.png)
 
