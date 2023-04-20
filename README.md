@@ -34,6 +34,7 @@ Key points to remember:
 - Two network adapters were used to separate traffic between external and internal. <br> ![adapters](https://i.imgur.com/WQydx1Ml.png) <br>
 - The following roles and services were configured. <br> ![roles](https://i.imgur.com/hDJ4vyfl.png)
 - PowerShell script used to generate approximately 1000 fictional users. <br> ![ps scrip](https://i.imgur.com/dhNIRcql.png) <br> ![AD Users](https://i.imgur.com/CG0Pu8vl.png)
+- After the configurations were completed I then took time to to explore AD by performing tasks such as: creating groups, organizational units, modifying user permissions, disabling users, deleting users, and so on.  <br> ![AD users and groups](https://i.imgur.com/2FVLj5ml.png)
 
 <br />
 
