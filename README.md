@@ -32,14 +32,14 @@ For this project, Oracle VirtualBox was utilized to create an integrated environ
 - Two network adapters were used to separate traffic between external and internal. <br> ![adapters](https://i.imgur.com/WQydx1Ml.png) <br>
 - The following roles and services were configured. <br> ![roles](https://i.imgur.com/hDJ4vyfl.png)
 - PowerShell script used to generate approximately 1000 fictional users. <br> ![ps scrip](https://i.imgur.com/dhNIRcql.png) <br> ![AD Users](https://i.imgur.com/CG0Pu8vl.png)
-- After the configurations were completed I then took time to to explore AD by performing tasks such as: creating groups, organizational units, modifying user permissions, disabling users, deleting users, and so on.  <br> ![AD users and groups](https://i.imgur.com/2FVLj5ml.png)
+- After the configurations were completed, I then took time to explore AD by performing tasks such as: creating groups, organizational units, modifying user permissions, disabling users, deleting users, and so on.  <br> ![AD users and groups](https://i.imgur.com/2FVLj5ml.png)
 
 <br />
 
 ## Connecting Windows 10 Pro to AD
 
-- The creation of the Windows VM was fairly straightforward and I encounted no issues.
-- During the install I placed the VM on the internal network and created a local account. 
+- The creation of the Windows VM was straightforward and I encounted no issues.
+- During the installation I placed the VM on the internal network and created a local account. 
 - I then updated the system's name and joined it to my domain. <br> ![Change name and join domain](https://i.imgur.com/96BzAlim.png)
 - From there I verified the VM was connected to AD by logging into several of the random users I had created. <br> ![Change name and join domain](https://i.imgur.com/ToE60Pgm.png)
 
