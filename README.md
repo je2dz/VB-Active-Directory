@@ -29,8 +29,6 @@ For this project, Oracle VirtualBox was utilized to create an integrated environ
 
 ## Windows Server 2019 Setup
 
-Key points to remember:
-
 - Two network adapters were used to separate traffic between external and internal. <br> ![adapters](https://i.imgur.com/WQydx1Ml.png) <br>
 - The following roles and services were configured. <br> ![roles](https://i.imgur.com/hDJ4vyfl.png)
 - PowerShell script used to generate approximately 1000 fictional users. <br> ![ps scrip](https://i.imgur.com/dhNIRcql.png) <br> ![AD Users](https://i.imgur.com/CG0Pu8vl.png)
