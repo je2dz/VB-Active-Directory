@@ -21,6 +21,7 @@ For this project, VMware was utilized to create an integrated environment that c
 - Networking
 - PowerShell
 - Oracle VirtualBox
+- VMware
 - Windows Server 2019
 - Windows 10 Pro
 - Ubuntu 22.04.4
@@ -78,7 +79,7 @@ Administrator Account: username
 
 ## UPDATE
 
-When reviewing this lab I discovered a new release of Ubuntu 23.10.1. So I decided to investigate if the issue of joining an AD domain was still present. The installation ended up being very straightforward and the ability to join an AD domain from set-up was a success. From there I backtracked and tried a newer version of Ubuntu 22.04.4 and discovered the AD issue still persists; however, my workaround still manages to connect to the AD domain.      
+When reviewing this lab I discovered a new release of Ubuntu 23.10.1. So I decided to investigate if the issue of joining an AD domain was still present. The installation ended up being very straightforward and the ability to join an AD domain from set-up was a success. From there I backtracked and tried a newer version of Ubuntu 22.04.4 and discovered the AD issue still persists; however, my workaround still manages to connect to the AD domain. VMware was also utilized to recreate the lab and verify if any issues encountered might be been related to Virtual Box.      
 
 ## Conclusion
 
