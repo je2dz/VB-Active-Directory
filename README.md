@@ -1,8 +1,8 @@
-# Integrated Active Directory Environment in VirtualBox
+# Integrated Active Directory Environment in VMware
 
 ## Introduction
 
-For this project, Oracle VirtualBox was utilized to create an integrated environment that consisted of a Windows Server 2019 Virtual Machine (VM) serving as the Domain Controller (DC) with Active Directory (AD) service. A custom PowerShell script was then executed to populate AD with approximately 1000 fictional users. I then created a Windows 10 Pro VM and an Ubuntu 22.04.1 VM and integrated them into AD to create a centralized management system for user accounts, computers, and other network resources. 
+For this project, VMware was utilized to create an integrated environment that consisted of a Windows Server 2019 Virtual Machine (VM) serving as the Domain Controller (DC) with Active Directory (AD) service. A custom PowerShell script was then executed to populate AD with approximately 1000 fictional users. I then created the following VMs:  Windows 10 Pro, Ubuntu 22.04.4, and Ubuntu 23.10.1. The VMs were then integrated into the AD domain to create a centralized management system for user accounts, computers, and other network resources. 
 
 <br />
 
@@ -23,7 +23,8 @@ For this project, Oracle VirtualBox was utilized to create an integrated environ
 - Oracle VirtualBox
 - Windows Server 2019
 - Windows 10 Pro
-- Ubuntu 22.04.1
+- Ubuntu 22.04.4
+- Ubuntu 23.10.1
 
 <br />
 
@@ -45,9 +46,11 @@ For this project, Oracle VirtualBox was utilized to create an integrated environ
 
 <br />
 
-## Connecting Ubuntu 22.04.1 to AD
+## Connecting Ubuntu 22.04.4 to AD
 
-I wanted to expand the lab to include systems other than Windows, so I decided to connect Ubuntu to AD. This was by far the most challenging portion of the lab. One is led to believe that while installing Ubuntu you can simply choose to use AD in the setup, and all will be fine. I never got it to succeed and always ended up getting a failed message. After searching the web, it appears to be a common issue and it took several YouTube videos, official documentation, and various websites to develop a workaround that would allow my VM to connect with AD. 
+I wanted to expand the lab to include systems other than Windows, so I decided to connect Ubuntu to AD. This was by far the most challenging portion of the lab. One is led to believe that while installing Ubuntu you can simply choose to use AD in the setup, and all will be fine. I never got it to succeed and always ended up getting a failed message. After searching the web, it appears to be a common issue and it took several YouTube videos, official documentation, and various websites to develop a workaround that would allow my VM to connect with AD. <br>
+
+![.conf edit](https://i.imgur.com/sdsE6ppl.png)
 
 #### STEPS
 
@@ -73,12 +76,16 @@ Administrator Account: username
   14. Now log off your primary account and pick a random user in AD. <br> ```user@mydomain.com``` <br> <br> ![Linux Logon](https://i.imgur.com/TAy4kSNl.png)
   15. Finally, once Ubuntu does the initial setup, open the command line interface and verify: <br> ```who``` <br> <br> ![who](https://i.imgur.com/s2djFZ3l.png)
 
+## UPDATE
+
+When reviewing this lab I discovered a new release of Ubuntu 23.10.1. So I decided to investigate if the issue of joining an AD domain was still present. The installation ended up being very straightforward and the ability to join an AD domain from set-up was a success. From there I backtracked and tried a newer version of Ubuntu 22.04.4 and discovered the AD issue still persists; however, my workaround still manages to connect to the AD domain.      
+
 ## Conclusion
 
-In this project, VirtualBox was used to create an integrated AD environment. The first VM was Windows Server 2019 that served as the DC, DHCP, and Active Directory populated with approximately 1000 users. Once the networking configurations were complete for the server, I then created two more VMs and connected them to an internal network using Active Directory. I found the initial setup for the two Windows machines straightforward; however, I did encounter difficulties by adding the additional goal of connecting an Ubuntu VM to Active Directory. After researching and testing I was able to find a solution that successfully fixed the problem and have created a project showing how AD can provide centralized management of user accounts, computers, and other network resources.   
+In this project, VirtualBox was used to create an integrated AD environment. The first VM was Windows Server 2019 that served as the DC, DHCP, and Active Directory populated with approximately 1000 users. Once the networking configurations were complete for the server, I then created three more VMs and connected them to an internal network using Active Directory. I found the initial setup for the Windows VM straightforward; however, I did encounter difficulties by adding the additional goal of connecting an Ubuntu 22.04.4 VM to Active Directory. After researching and testing I was able to find a solution that successfully fixed the problem and have created a project showing how AD can provide centralized management of user accounts, computers, and other network resources. On review I also discovered the release of Ubuntu 23.04.4 had fixed the issue of joing AD on set-up; however, the previous version still has the same difficulties.   
 
-![AD Computers](https://i.imgur.com/yGbJT3Il.png)
-![DHCP Reservations](https://i.imgur.com/BHs2LzLl.png)
+![AD Computers](https://i.imgur.com/ur9L7kXl.png)
+![DHCP Reservations](https://i.imgur.com/ur9L7kXl.png)
 
 <br />
 
