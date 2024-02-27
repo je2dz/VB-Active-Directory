@@ -2,7 +2,7 @@
 
 ## Introduction
 
-For this project, VMware was utilized to create an integrated environment that consisted of a Windows Server 2019 Virtual Machine (VM) serving as the Domain Controller (DC) with Active Directory (AD) service. A custom PowerShell script was then executed to populate AD with approximately 1000 fictional users. I then created the following VMs:  Windows 10 Pro, Ubuntu 22.04.4, and Ubuntu 23.10.1. The VMs were then integrated into the AD domain to create a centralized management system for user accounts, computers, and other network resources. 
+For this project, VMware was utilized to create an integrated environment that consisted of a Windows Server 2019 Virtual Machine (VM) serving as the Domain Controller (DC) with Active Directory (AD) service. A custom PowerShell script was then executed to populate AD with approximately 1000 fictional users. I then created the following VMs:  Windows 10 Pro, Ubuntu 22.04.4, and Ubuntu 23.10.1. The VMs were then integrated into the AD domain to create a centralized management system for user accounts, computers, and other network resources. Initially Virtual Box was utilized with success and later VMware was used to confirm the ability to reproduce in another environment and test a new release of Ubuntu. 
 
 <br />
 
